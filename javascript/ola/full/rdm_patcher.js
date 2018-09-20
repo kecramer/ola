@@ -824,7 +824,7 @@ ola.RDMPatcher.prototype.getPersonalitiesComplete_ = function(e) {
     }
     this.personalities = new Array();
 
-    personalities = response['personalities'];
+    var personalities = response['personalities'];
     for (var i = 0; i < personalities.length; ++i) {
       if (personalities[i]['footprint'] > 0) {
         var label = (personalities[i]['name'] + ' (' +

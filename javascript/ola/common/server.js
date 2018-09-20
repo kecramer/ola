@@ -550,7 +550,7 @@ ola.common.Server.prototype.modifyUniverse = function(universe_id,
       '&merge_mode=' + merge_mode + '&add_ports=' + ports_to_add.join(',') +
       '&remove_ports=' + ports_to_remove.join(','));
 
-  modified_port_ids = new Array();
+  var modified_port_ids = new Array();
   for (var i = 0; i < port_priorities.length; ++i) {
     var priority_setting = port_priorities[i];
     post_data += ('&' + priority_setting.id + '_priority_value=' +

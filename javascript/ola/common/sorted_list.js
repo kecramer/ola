@@ -153,14 +153,12 @@ ola.common.SortedList.prototype.updateFromData = function(item_list) {
       item_index++;
     } else {
       var n = this.container.removeChild(current_component, true);
-      delete f;
     }
   }
 
   // remove any remaining nodes
   while (component_index < this.container.getChildCount()) {
     var n = this.container.removeChildAt(component_index, true);
-    delete n;
   }
 
   // add any remaining items
